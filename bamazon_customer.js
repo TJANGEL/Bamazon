@@ -146,7 +146,7 @@ function inquire() {
                   if (err) {
                     throw err;
                   } else {
-                    console.log("Tickets purchased!");
+                    console.log("Items purchased!");
                     var newPurchased =
                       parseInt(oldPurchased) + parseInt(purchased);
                     connection.query(
@@ -171,7 +171,7 @@ function inquire() {
                 }
               );
             } else {
-              console.log("Not enough tickets left!");
+              console.log("Insufficient quantity!");
               displayAll();
             }
           }
