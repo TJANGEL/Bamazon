@@ -17,14 +17,14 @@ CREATE TABLE Products(
 select * from Products;
 
 INSERT INTO Products(ProductName,DepartmentName,Price,StockQuantity)
-VALUES ("Venom","ENTERTAINMENT",29.95,150),
+VALUES ("Venom","ENTERTAINMENT",29.95,50),
     ("Red Dead Redemption 2","ENTERTAINMENT",59.99,200),
     ("Cheerios","GROCERY",4.25,500),
     ("Dove Shampoo","BODY & HEALTH",6.95,430),
     ("Eagles Jersey","CLOTHING",54.95,35),
     ("Camping Tent","SPORTS & OUTDOORS",299.99,42),
-    ("Bill and Ted's Excellent Adventure","ENTERTAINMENT",15.00,25),
-    ("Mad Max: Fury Road","ENTERTAINMENT",19.99,26),
+    ("Apple Watch","ELECTRONICS",329.99,25),
+    ("Mission Impossible: Fallout","ENTERTAINMENT",29.99,26),
     ("Area Rug","HOME",99.89,35),
     ("Schwinn Stingray","KIDS",499.95,10);
 
