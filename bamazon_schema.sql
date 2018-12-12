@@ -1,3 +1,4 @@
+-- Drops the favorite_db if it exists currently --
 DROP DATABASE IF EXISTS Bamazon;
 
 CREATE DATABASE Bamazon;
@@ -16,16 +17,16 @@ CREATE TABLE Products(
 select * from Products;
 
 INSERT INTO Products(ProductName,DepartmentName,Price,StockQuantity)
-VALUES ("Uncharted 4","ENTERTAINMENT",49.95,150),
-    ("DOOM","ENTERTAINMENT",59.99,200),
-    ("Crate of Spam","GROCERY",24.50,50),
-    ("Cool Shades","CLOTHING",75.00,5),
-    ("Worn Denim Jeans","CLOTHING",54.25,35),
-    ("Survival Towel","SPORTS & OUTDOORS",42.42,42),
+VALUES ("Venom","ENTERTAINMENT",29.95,150),
+    ("Red Dead Redemption 2","ENTERTAINMENT",59.99,200),
+    ("Cheerios","GROCERY",4.25,500),
+    ("Dove Shampoo","BODY & HEALTH",6.95,430),
+    ("Eagles Jersey","CLOTHING",54.95,35),
+    ("Camping Tent","SPORTS & OUTDOORS",299.99,42),
     ("Bill and Ted's Excellent Adventure","ENTERTAINMENT",15.00,25),
-    ("Mad Max: Fury Road","ENTERTAINMENT",25.50,57),
-    ("Monopoly","ENTERTAINMENT",30.50,35),
-    ("Yahtzee","ENTERTAINMENT",19.95,23);
+    ("Mad Max: Fury Road","ENTERTAINMENT",19.99,26),
+    ("Area Rug","HOME",99.89,35),
+    ("Schwinn Stingray","KIDS",499.95,10);
 
 CREATE TABLE Departments(
     DepartmentID MEDIUMINT AUTO_INCREMENT NOT NULL,
