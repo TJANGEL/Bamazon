@@ -1,12 +1,13 @@
--- Drops the Bamazon database if it exists currently --
+-- drops the Bamazon database if it exists currently --
 DROP DATABASE IF EXISTS Bamazon;
 
--- Create Bamazon Database
+-- create Bamazon Database
 CREATE DATABASE Bamazon;
 
--- All of following code will affect Bamazon
+-- all of following code will affect Bamazon
 USE Bamazon;
 
+-- create table Products
 CREATE TABLE Products(
     ItemID MEDIUMINT AUTO_INCREMENT NOT NULL,
     ProductName VARCHAR(100) NOT NULL,
@@ -16,8 +17,10 @@ CREATE TABLE Products(
     PRIMARY KEY(ItemID)
 );
 
+-- query data from table
 SELECT * FROM Products;
 
+-- populate Products table with rows of data
 INSERT INTO Products(ProductName,DepartmentName,Price,StockQuantity)
 VALUES ("Venom","ENTERTAINMENT",29.95,50),
     ("Red Dead Redemption 2","ENTERTAINMENT",59.99,200),
@@ -30,6 +33,7 @@ VALUES ("Venom","ENTERTAINMENT",29.95,50),
     ("Area Rug","HOME",99.89,35),
     ("Schwinn Stingray","KIDS",499.95,10);
 
+-- create table Departments
 CREATE TABLE Departments(
     DepartmentID MEDIUMINT AUTO_INCREMENT NOT NULL,
     DepartmentName VARCHAR(50) NOT NULL,
@@ -37,6 +41,7 @@ CREATE TABLE Departments(
     TotalSales DECIMAL(10,2) NOT NULL,
     PRIMARY KEY(DepartmentID));
 
+-- populate department with rows of data
 INSERT INTO Departments(DepartmentName, OverHeadCosts, TotalSales)
 VALUES ('ENTERTAINMENT', 50000.00, 15000.00),
     ('ELECTRONICS', 20000.00, 12000.00),
