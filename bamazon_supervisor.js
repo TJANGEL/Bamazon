@@ -13,6 +13,8 @@ var connection = mysql.createConnection({
 });
 
 function start() {
+  console.log(chalk.red.underline("SUPERVISOR MODE"));
+
   inquirer
     .prompt([
       {
@@ -45,9 +47,11 @@ function viewProductByDept() {
   //prints the items for sale and their details
   connection.query("SELECT * FROM Departments", function(err, res) {
     if (err) throw err;
-    console.log(">>>>>>Product Sales by Department<<<<<<");
+    console.log(chalk.yellow(">>>>>>Product Sales by Department<<<<<<"));
     console.log(
-      "----------------------------------------------------------------------------------------------------"
+      chalk.red(
+        "---------------------------------------------------------------------------------------------------------------------------------"
+      )
     );
 
     for (var i = 0; i < res.length; i++) {
@@ -68,7 +72,9 @@ function viewProductByDept() {
           (res[i].TotalSales - res[i].OverHeadCosts).toFixed(2)
       );
       console.log(
-        "--------------------------------------------------------------------------------------------------"
+        chalk.red(
+          "---------------------------------------------------------------------------------------------------------------------------------"
+        )
       );
     }
     start();
