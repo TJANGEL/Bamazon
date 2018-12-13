@@ -13,6 +13,8 @@ var connection = mysql.createConnection({
 });
 
 function start() {
+  console.log(chalk.red.underline("MANAGER MODE"));
+
   inquirer
     .prompt([
       {
@@ -50,12 +52,14 @@ function start() {
 
 //views all inventory
 function viewProducts() {
-  console.log(">>>>>>Viewing Products<<<<<<");
+  console.log(chalk.yellow(">>>>>>Viewing Products<<<<<<"));
 
   connection.query("SELECT * FROM Products", function(err, res) {
     if (err) throw err;
     console.log(
-      "----------------------------------------------------------------------------------------------------"
+      chalk.red(
+        "--------------------------------------------------------------------------------------------------"
+      )
     );
 
     for (var i = 0; i < res.length; i++) {
@@ -76,7 +80,9 @@ function viewProducts() {
           res[i].StockQuantity
       );
       console.log(
-        "--------------------------------------------------------------------------------------------------"
+        chalk.red(
+          "--------------------------------------------------------------------------------------------------"
+        )
       );
     }
 
@@ -91,7 +97,9 @@ function viewLowInventory() {
   connection.query("SELECT * FROM Products", function(err, res) {
     if (err) throw err;
     console.log(
-      "----------------------------------------------------------------------------------------------------"
+      chalk.red(
+        "--------------------------------------------------------------------------------------------------"
+      )
     );
 
     for (var i = 0; i < res.length; i++) {
@@ -113,7 +121,9 @@ function viewLowInventory() {
             res[i].StockQuantity
         );
         console.log(
-          "--------------------------------------------------------------------------------------------------"
+          chalk.red(
+            "--------------------------------------------------------------------------------------------------"
+          )
         );
       }
     }
