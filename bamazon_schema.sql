@@ -1,8 +1,10 @@
--- Drops the favorite_db if it exists currently --
+-- Drops the Bamazon database if it exists currently --
 DROP DATABASE IF EXISTS Bamazon;
 
+-- Create Bamazon Database
 CREATE DATABASE Bamazon;
 
+-- All of following code will affect Bamazon
 USE Bamazon;
 
 CREATE TABLE Products(
