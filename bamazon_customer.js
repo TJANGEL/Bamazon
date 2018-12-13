@@ -17,9 +17,13 @@ function start() {
   connection.query("SELECT * FROM Products", function(err, res) {
     if (err) throw err;
 
-    console.log('_.~"~._.~"~._.~Welcome to Bamazon~._.~"~._.~"~._');
     console.log(
-      "----------------------------------------------------------------------------------------------------"
+      chalk.bold.yellow('_.~"~._.~"~._.~Welcome to Bamazon~._.~"~._.~"~._')
+    );
+    console.log(
+      chalk.red(
+        "--------------------------------------------------------------------------------------------------"
+      )
     );
 
     for (var i = 0; i < res.length; i++) {
@@ -40,7 +44,9 @@ function start() {
           res[i].StockQuantity
       );
       console.log(
-        "--------------------------------------------------------------------------------------------------"
+        chalk.red(
+          "--------------------------------------------------------------------------------------------------"
+        )
       );
     }
 
@@ -50,7 +56,9 @@ function start() {
         {
           type: "input",
           name: "id",
-          message: "What is the ID of the product you would like to purchase?",
+          message: chalk.blue(
+            "What is the ID of the product you would like to purchase?"
+          ),
           validate: function(value) {
             if (
               isNaN(value) == false &&
