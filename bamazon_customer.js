@@ -103,9 +103,9 @@ function start() {
             function(err, result) {
               if (err) throw err;
               console.log(
-                "Success! Your total is $" +
+                "Order Complete! Your total is $" +
                   grandTotal.toFixed(2) +
-                  ". Your item(s) will be shipped to you in 3-5 business days."
+                  ". Your item(s) will be shipped to you in 1-3 business days."
               );
             }
           );
@@ -131,12 +131,14 @@ function start() {
                 //console.log("Updated Dept Sales.");
               }
             );
+            reprompt();
           });
         } else {
           console.log("Sorry, there's not enough in stock!");
+          reprompt();
         }
-
-        reprompt();
+        // setTimeout(reprompt(), 2000);
+        // reprompt();
       });
   });
 }
