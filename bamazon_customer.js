@@ -1,6 +1,7 @@
 //require mysql and inquirer
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var chalk = require("Chalk");
 
 //create connection to db
 var connection = mysql.createConnection({
