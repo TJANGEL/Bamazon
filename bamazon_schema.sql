@@ -11,10 +11,10 @@ CREATE TABLE Products(
     DepartmentName VARCHAR(50) NOT NULL,
     Price DECIMAL(10,2) NOT NULL,
     StockQuantity INT(10) NOT NULL,
-    primary key(ItemID)
+    PRIMARY KEY(ItemID)
 );
 
-select * from Products;
+SELECT * FROM Products;
 
 INSERT INTO Products(ProductName,DepartmentName,Price,StockQuantity)
 VALUES ("Venom","ENTERTAINMENT",29.95,50),
