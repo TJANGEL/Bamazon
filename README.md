@@ -2,7 +2,7 @@
 
 ### npm installments:
 
-` inquirer``console.table``mysql``chalk `
+`inquirer, console.table, mysql, chalk`
 
 ### Built with:
 
