@@ -14,34 +14,34 @@
 
 ## Demo of functioning app:
 
-###Customer Interface:
+### Customer Interface:
 
 ![customer interface](https://github.com/TJANGEL/Bamazon/blob/master/assets/customer_screenshot.png)
 
-###Customer Interface (Insufficient Inventory response)
+### Customer Interface (Insufficient Inventory response)
 
 ![customer interface](https://github.com/TJANGEL/Bamazon/blob/master/assets/customer_insufficientstock_screenshot.png)
 
-###Manager Mode (View Products)
+### Manager Mode (View Products)
 
 ![manager mode](https://github.com/TJANGEL/Bamazon/blob/master/assets/manager_viewproducts_screenshot.png)
 
-###Manager Mode (Add Products)
+### Manager Mode (Add Products)
 
 ![manager mode](https://github.com/TJANGEL/Bamazon/blob/master/assets/manager_addproduct_screenshot.png)
 
-###Manager Mode (Add to Low Invetory)
+### Manager Mode (Add to Low Invetory)
 
 ![manager mode](https://github.com/TJANGEL/Bamazon/blob/master/assets/manager_addinventory_screenshot.png)
 
-###Supervisor Mode (View Products)
+### Supervisor Mode (View Products)
 
 ![manager mode](https://github.com/TJANGEL/Bamazon/blob/master/assets/supervisor_viewproducts_screenshot.png)
 
-###Supervisor Mode (Add Department)
+### Supervisor Mode (Add Department)
 
 ![manager mode](https://github.com/TJANGEL/Bamazon/blob/master/assets/supervisor_addDepartment_screenshot.png)
 
-###Full Demo Video:
+### Full Demo Video:
 
 ![Full Video Demo](https://github.com/TJANGEL/Bamazon/blob/master/assets/bamazon_demo.mov)
