@@ -1,6 +1,6 @@
 # Bamazon
 
-### npm installments:
+### npm installs:
 
 `inquirer, console.table, mysql, chalk`
 
@@ -16,7 +16,7 @@
 
 `MAMP`
 
-## Demo and functionality app:
+## Demo and functionality of app:
 
 ### bamazon_customer.js
 
