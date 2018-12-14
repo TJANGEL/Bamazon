@@ -17,9 +17,7 @@ function start() {
   connection.query("SELECT * FROM Products", function(err, res) {
     if (err) throw err;
 
-    console.log(
-      chalk.bold.yellow('_.~"~._.~"~._.~Welcome to Bamazon~._.~"~._.~"~._')
-    );
+    console.log(chalk.bold.yellow("========= Welcome to Bamazon ========="));
     console.log(
       chalk.red(
         "--------------------------------------------------------------------------------------------------"
