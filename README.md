@@ -6,11 +6,11 @@
 
 ### Built with:
 
-`Visual Studio Code (https://code.visualstudio.com) - Text editor`
-
-`Javascript`
-
-`Node.js (https://nodejs.org/en) - Framework used`
+- [Visual Studio Code](https://code.visualstudio.com) - Text Editor
+- [JavaScript]
+- [Node.js](https://nodejs.org/en) - Framework
+- [MySQL Workbench](https://www.mysql.com/products/workbench/) - Database Manager
+- [MAMP](https://www.mamp.info/en/) - Local Server
 
 `MySQL Workbench`
 
